@@ -16,7 +16,7 @@ class UserSeeder extends Seeder
             ['email' => 'admin@partlyfe.com'],
             [
                 'name' => 'Admin Partlyfe',
-                'password' => Hash::make('password'),
+                'password' => Hash::make('admin'),
                 'role' => 'admin',
                 'phone' => '081234567890',
                 'address' => 'Jakarta, Indonesia',
@@ -24,10 +24,10 @@ class UserSeeder extends Seeder
         );
 
         $rizal = User::firstOrCreate(
-            ['email' => 'rizal.h@email.com'],
+            ['email' => 'user1@email.com'],
             [
-                'name' => 'Rizal Hermawan',
-                'password' => Hash::make('password'),
+                'name' => 'user1',
+                'password' => Hash::make('user1'),
                 'role' => 'customer',
                 'phone' => '081234567890',
                 'address' => 'Jl. Rungkut Industri No. 45, Kota Surabaya',
@@ -35,10 +35,10 @@ class UserSeeder extends Seeder
         );
 
         $budi = User::firstOrCreate(
-            ['email' => 'budi@example.com'],
+            ['email' => 'user2@example.com'],
             [
-                'name' => 'Budi Santoso',
-                'password' => Hash::make('password'),
+                'name' => 'user2',
+                'password' => Hash::make('user2'),
                 'role' => 'customer',
                 'phone' => '082345678901',
                 'address' => 'Jl. Sudirman No. 10, Jakarta Pusat',
